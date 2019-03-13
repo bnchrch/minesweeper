@@ -1,21 +1,28 @@
 # Minesweeper
-
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `minesweeper` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:minesweeper, "~> 0.1.0"}
-  ]
-end
+A simple minesweeper built with elixir
+```
+▶ ./minesweeper --dimension 7 --mines 6
+0    0    0    0    1    1    1
+0    0    1    .    2    . 1
+0    0    1    mine 4    3    2
+0    0    1    2    .    .    1
+0    0    0    2    3    3    1
+1    1    1    1    .    1    0
+1    .    1    1    1    1    0
+```
+## Building
+```bash
+mix deps.get
+mix escript.build
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/minesweeper](https://hexdocs.pm/minesweeper).
+## Running
+```bash
+./minesweeper --dimension 7 --mines 6
+```
+
+## Commands
+`r1c3` -> select cell at row 1 column 3
+
+`quit` -> end game
 
